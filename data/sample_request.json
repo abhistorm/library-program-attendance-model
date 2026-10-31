@@ -1,0 +1,14 @@
+{
+  "features": {
+    "p098_library_program_attendance_model_wait_time_min": 0.0,
+    "p098_library_program_attendance_model_application_completeness": 0.0,
+    "p098_library_program_attendance_model_service_load": 0.0,
+    "p098_library_program_attendance_model_repeat_visits": 0.0,
+    "p098_library_program_attendance_model_travel_distance_km": 0.0,
+    "p098_library_program_attendance_model_staff_ratio": 0.0,
+    "p098_library_program_attendance_model_response_delay_hours": 0.0,
+    "p098_library_program_attendance_model_neighborhood_index": 0.0,
+    "p098_library_program_attendance_model_weather_impact": 0.0,
+    "p098_library_program_attendance_model_request_complexity": 0.0
+  }
+}

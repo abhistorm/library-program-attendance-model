@@ -1,0 +1,54 @@
+{
+  "id": "098",
+  "slug": "098-library-program-attendance-model",
+  "name": "Library Program Attendance Model",
+  "domain": "Public services & civic systems",
+  "domain_slug": "public-services",
+  "task_type": "regression",
+  "target": "p098_library_program_attendance_model_outcome_value",
+  "features": [
+    "p098_library_program_attendance_model_wait_time_min",
+    "p098_library_program_attendance_model_application_completeness",
+    "p098_library_program_attendance_model_service_load",
+    "p098_library_program_attendance_model_repeat_visits",
+    "p098_library_program_attendance_model_travel_distance_km",
+    "p098_library_program_attendance_model_staff_ratio",
+    "p098_library_program_attendance_model_response_delay_hours",
+    "p098_library_program_attendance_model_neighborhood_index",
+    "p098_library_program_attendance_model_weather_impact",
+    "p098_library_program_attendance_model_request_complexity"
+  ],
+  "model_key": "elastic-net",
+  "model_class": "ElasticNet",
+  "serving": "Streamlit",
+  "extension_focus": "KServe model deployment",
+  "seed": 202698,
+  "rows": 426285,
+  "dataset_bytes": 39850347,
+  "model_training": {
+    "source": "synthetic dataset bundled with this project",
+    "sample_rows": 5000,
+    "fit_rows": 4000,
+    "holdout_rows": 1000,
+    "metrics": {
+      "mae": 0.4503,
+      "rmse": 0.5716,
+      "r2": 0.9628
+    },
+    "artifact": "models/model.joblib"
+  },
+  "gui_feature": {
+    "mode": "sensitivity",
+    "title": "Library Program Attendance · Sensitivity map",
+    "description": "Rank the inputs by their local perturbation effect on the selected model. This panel is tuned to Library Program Attendance Model and its p098 library program attendance model neighborhood index signal.",
+    "focus_feature": "p098_library_program_attendance_model_neighborhood_index",
+    "mode_title": "Sensitivity map"
+  },
+  "gui": {
+    "frontend": "HTML/CSS/JavaScript",
+    "backend": "FastAPI",
+    "standalone": true
+  },
+  "model_artifact": "models/model.joblib",
+  "model_bytes": 2264
+}
